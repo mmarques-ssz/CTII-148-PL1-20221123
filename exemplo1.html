@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplos com ARRAYS</title>
+</head>
+<body>
+    <script language="javascript">
+        var i, a, b, c;
+        a = new Array();
+        document.write("Qtde de elementos: ");
+        document.write(a.length);
+        document.write("<br>----------------------------<br>");
+        a[5]=7;
+        document.write("Qtde de elementos: ");
+        document.write(a.length);
+        document.write("<br>----------------------------<br>");
+        for(i=0; i < a.length; ++i)
+        {
+            document.write("Elemento " + i + ": " + a[i]);
+            document.write("<br>");
+        }
+        document.write("<br>----------------------------<br>");
+        
+        a[2] = 0;
+        for(i=0; i < a.length; ++i)
+        {
+            document.write("Elemento " + i + ": " + a[i]);
+            document.write("<br>");
+        }
+        document.write("<br>----------------------------<br>");
+
+        a[7] = 10;
+        for(i=0; i < a.length; ++i)
+        {
+            document.write("Elemento " + i + ": " + a[i]);
+            document.write("<br>");
+        }
+        document.write("<br>----------------------------<br>");
+
+        b = new Array(5);
+        for(i=0; i < b.length; ++i)
+        {
+            b[i]=i+1;
+        }
+        for(i=0; i < b.length; ++i)
+        {
+            document.write("Elemento " + i + ": " + b[i]);
+            document.write("<br>");
+        }
+
+        c = new Array("Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab");
+        d = new Array("Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
+                      "Jul", "Ago", "Set", "Out", "Nov", "Dez");
+
+        hoje = new Date();
+        document.write(c[hoje.getDay()] + "<br>");
+        document.write(d[hoje.getMonth()] + "<br>");
+
+
+
+
+    </script>
+    
+</body>
+</html>
